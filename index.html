@@ -2,52 +2,103 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moja Strona</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cookie Kingdom Rush</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f4f4f4;
+      font-family: 'Fredoka One', cursive;
+      background: #fff5ec;
       color: #333;
     }
     header {
-      background: #333;
-      color: #fff;
-      padding: 2rem;
+      background: url('https://images.unsplash.com/photo-1607082349564-3bba1ba0d50b') no-repeat center/cover;
+      color: white;
+      padding: 4rem 2rem;
       text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      text-shadow: 2px 2px 5px #000;
+    }
+    nav {
+      background: #ff8a65;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     main {
       padding: 2rem;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
     }
+    section {
+      margin-bottom: 2rem;
+    }
+    .characters {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+    }
+    .characters img {
+      width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
     footer {
-      background: #222;
-      color: #ccc;
+      background: #ff7043;
+      color: white;
       text-align: center;
       padding: 1rem;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Witaj na mojej stronie!</h1>
-    <p>To jest moja pierwsza strona na GitHub Pages</p>
+    <h1>Cookie Kingdom Rush</h1>
+    <p>Dołącz do słodkiej przygody w bajkowym królestwie ciastek!</p>
   </header>
-  <main>
-    <h2>O mnie</h2>
-    <p>Tutaj możesz napisać kilka zdań o sobie, swojej pracy, pasjach itp.</p>
 
-    <h2>Kontakt</h2>
-    <p>Możesz dodać tutaj e-mail, linki do social mediów lub formularz kontaktowy.</p>
+  <nav>
+    <a href="#o-grze">O grze</a>
+    <a href="#postacie">Postacie</a>
+    <a href="#dolacz">Dołącz</a>
+  </nav>
+
+  <main>
+    <section id="o-grze">
+      <h2>O grze</h2>
+      <p>"Cookie Kingdom Rush" to fantastyczna podróż przez magiczne królestwo ciastek, gdzie bohaterowie z ciasta stają do walki przeciwko złym warstwom lukru! Zbieraj postacie, ulepszaj ich i ratuj słodką krainę przed zagładą!</p>
+    </section>
+
+    <section id="postacie">
+      <h2>Postacie</h2>
+      <div class="characters">
+        <img src="https://images.unsplash.com/photo-1617191518003-c80c0c798897" alt="Ciasteczkowy Rycerz">
+        <img src="https://images.unsplash.com/photo-1607083201574-1d5782bdb1db" alt="Magiczny Muffin">
+        <img src="https://images.unsplash.com/photo-1542826438-8fb7f89dd2a6" alt="Brownie Wojownik">
+      </div>
+    </section>
+
+    <section id="dolacz">
+      <h2>Dołącz do gry!</h2>
+      <p>Wejdź do świata Cookie Kingdom Rush już dziś i stań się legendą! Ściągnij demo lub dołącz do społeczności na Discordzie (linki do dodania).</p>
+    </section>
   </main>
+
   <footer>
-    &copy; 2025 Twoje Imię
+    &copy; 2025 Cookie Kingdom Rush – fanowska strona gry | Grafiki: Unsplash
   </footer>
 </body>
 </html>
